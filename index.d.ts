@@ -1,4 +1,4 @@
-class _SubRange {
+declare class _SubRange {
   constructor(low: number, high: number);
 
   low: number;
@@ -18,7 +18,7 @@ class _SubRange {
   clone(): _SubRange;
 }
 
-export = class DiscontinuousRange {
+declare class DiscontinuousRange {
   constructor();
   constructor(i: number);
   constructor(start: number, end: number);
@@ -44,3 +44,5 @@ export = class DiscontinuousRange {
 
   clone(): DiscontinuousRange;
 }
+
+export = DiscontinuousRange;
